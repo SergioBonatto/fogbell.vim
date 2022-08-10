@@ -38,19 +38,19 @@ endfun
 " ==========================
 " Color Variables
 " ==========================
-let s:voidBlack = {'gui': '#121212', 'cterm256': '233'}
-let s:voidBlack2 = {'gui': '#262626', 'cterm256': '235'}
-let s:voidGray1 = {'gui': '#3E3D32', 'cterm256': '237'}
-let s:voidGray2 = {'gui': '#49483E', 'cterm256': '239'}
-let s:voidGray3 = {'gui': '#6B6B6B', 'cterm256': '242'}
-let s:voidGray4 = {'gui': '#B0B0B0', 'cterm256': '249'}
-let s:voidSteel = {'gui': '#D0D0D0', 'cterm256': '252'}
-let s:voidBlue = {'gui': '#699B9B', 'cterm256': '109'}
-let s:voidGreen = {'gui': '#569F7A', 'cterm256': '72'}
-let s:voidGold = {'gui': '#8E700B', 'cterm256': '136'}
-let s:voidRed = {'gui': '#821A1A', 'cterm256': '1'}
-let s:voidRed2 = {'gui': '#FF0000', 'cterm256': '196'}
-let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
+let s:voidBlack  = {'gui': '#121212', 'cterm256':  '233'}
+let s:voidBlack2 = {'gui': '#262626', 'cterm256':  '235'}
+let s:voidGray1  = {'gui': '#262628', 'cterm256':  '237'}
+let s:voidGray2  = {'gui': '#373739', 'cterm256':  '239'}
+let s:voidGray3  = {'gui': '#6B6B6B', 'cterm256':  '242'}
+let s:voidGray4  = {'gui': '#B0B0B0', 'cterm256':  '249'}
+let s:voidSteel  = {'gui': '#BABABA', 'cterm256':  '252'}
+let s:voidBlue   = {'gui': '#FFFFFF', 'cterm256':  '109'}
+let s:voidGreen  = {'gui': '#FFF0F2', 'cterm256':   '72'}
+let s:voidGold   = {'gui': '#F2f2f2', 'cterm256':  '136'}
+let s:voidRed    = {'gui': '#821A1A', 'cterm256':    '1'}
+let s:voidRed2   = {'gui': '#FF0000', 'cterm256':  '196'}
+let s:none       = {'gui': 'NONE'   , 'cterm256': 'NONE'}
 
 " ==========================
 " Definitions
@@ -67,7 +67,7 @@ call <sid>hi('Directory', s:voidSteel, s:voidBlack, 'none')
 call <sid>hi('FoldColumn', s:none, s:voidBlack2, 'none')
 call <sid>hi('Folded', s:voidGray3, s:none, 'none')
 call <sid>hi('IncSearch', s:voidBlack, s:voidGold, 'none')
-call <sid>hi('LineNr', s:voidGray3, s:voidBlack2, 'none')
+call <sid>hi('LineNr', s:voidBlack2, s:voidBlack, 'none')
 call <sid>hi('MatchParen', s:voidSteel, s:voidGray3, 'none')
 call <sid>hi('Normal', s:voidSteel, s:voidBlack, 'none')
 call <sid>hi('Pmenu', s:none, s:voidBlack2, 'none')
@@ -75,12 +75,12 @@ call <sid>hi('PmenuSel', s:none, s:voidGray2, 'none')
 call <sid>hi('Search', s:voidBlack, s:voidGold, 'none')
 call <sid>hi('SignColumn', s:none, s:voidBlack2, 'none')
 call <sid>hi('StatusLine', s:voidBlack, s:voidSteel, 'none')
-call <sid>hi('StatusLineNC', s:voidGray3, s:voidBlack2, 'none')
-call <sid>hi('VertSplit', s:voidBlack, s:voidGray3, 'none')
+call <sid>hi('StatusLineNC', s:voidBlack, s:voidBlack2, 'none')
+call <sid>hi('VertSplit', s:voidGray3, s:voidBlack, 'none')
 call <sid>hi('Visual', s:none, s:voidGray2, 'none')
 
 " General
-call <sid>hi('Boolean', s:voidSteel, s:none, 'none')
+call <sid>hi('Boolean', s:voidBlue, s:none, 'none')
 call <sid>hi('Character', s:voidSteel, s:none, 'none')
 call <sid>hi('Comment', s:voidGray3, s:none, 'none')
 call <sid>hi('Conditional', s:voidSteel, s:none, 'none')
@@ -92,12 +92,12 @@ call <sid>hi('DiffDelete', s:voidSteel, s:voidRed, 'none')
 call <sid>hi('DiffText', s:voidGray1, s:voidBlue, 'none')
 call <sid>hi('ErrorMsg', s:voidSteel, s:voidRed, 'none')
 call <sid>hi('Float', s:voidSteel, s:none, 'none')
-call <sid>hi('Function', s:voidSteel, s:none, 'none')
+call <sid>hi('Function', s:voidGold, s:none, 'none')
 call <sid>hi('Identifier', s:voidSteel, s:none, 'none')
-call <sid>hi('Keyword', s:voidSteel, s:none, 'none')
+call <sid>hi('Keyword', s:voidGreen, s:none, 'none')
 call <sid>hi('Label', s:voidSteel, s:none, 'none')
 call <sid>hi('NonText', s:voidGray3, s:none, 'none')
-call <sid>hi('Number', s:voidSteel, s:none, 'none')
+call <sid>hi('Number', s:voidRed2, s:none, 'none')
 call <sid>hi('Operator', s:voidSteel, s:none, 'none')
 call <sid>hi('PreProc', s:voidSteel, s:none, 'none')
 call <sid>hi('Special', s:voidSteel, s:none, 'none')
